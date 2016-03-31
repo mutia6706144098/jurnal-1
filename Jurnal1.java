@@ -18,9 +18,11 @@ public class Jurnal1 {
          System.out.print("Input:");
          Scanner input = new Scanner(System.in);
          int panjang = input.nextInt();
+         long jum=0;
          for(int i=1;i<=panjang;i++){
-             System.out.print(fibo(i) + " ");
+            jum=jum+fibo(i);
          }
+         System.out.println(jum);
     }
      
     public static long fibo(int n) {
